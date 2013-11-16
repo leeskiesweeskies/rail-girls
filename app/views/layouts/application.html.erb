@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Railsgirls</title>
+  <title>Railsgirls tutorial</title>
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap.min.css">
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="topbar">
+  <div class="fill">
+    <div class="container">
+      <a class="brand" href="/">The Idea App</a>
+      <ul class="nav">
+        <li ><%= link_to 'New Idea', new_idea_path %></li>
+      </ul>
+    </div>
+  </div>
+</div>
 
-<%= yield %>
+<div class="container">
+	<%= yield %>
+</div>
+
+<footer>
+  <div class="container">
+    Rails Girls 2013
+  </div>
+</footer>
 
 </body>
 </html>

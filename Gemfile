@@ -7,6 +7,10 @@ gem 'rails', '4.0.1'
 group :development do
 	gem 'sqlite3'
 end
+
+gem 'carrierwave'
+gem 'mini_magick', '3.5.0'
+
 group :production do
 	gem 'pg'
 	gem 'rails_12factor'
